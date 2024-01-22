@@ -20,12 +20,20 @@ const Game: React.FC = () => {
         setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
     };
 
-
+    let status;
+    const winner = calculateWinner(board);
+    if (winner) {
+        status = `Winner: ${winner}`;
+    } else if (board.every(cell => cell !== null)) {
+        status = "It's a draw!";
+    } else {
+        status = `Next player: ${currentPlayer}`;
+    }
 
     return (
         <>
+        <p>{status}</p>
         <Board board={board} onCellClick={handleClick} />
-        {calculateWinner(board) && <p>Winner: {calculateWinner(board)}</p>}
         <button className='Reset-Button' onClick={() => setBoard(Array(9).fill(null))}>Start new game</button>
         </>
     );

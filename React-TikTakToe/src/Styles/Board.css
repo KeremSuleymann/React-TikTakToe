@@ -22,6 +22,7 @@
     border: none; /* Kenarlık yok */
     border-radius: 5px; /* Köşe yuvarlama */
     cursor: pointer; /* İmleç türü */
+    user-select: none;
 }
 
 .Reset-Button:hover {
@@ -40,6 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .Board-Row button:hover {
