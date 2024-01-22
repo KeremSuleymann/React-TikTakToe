@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Tik Tak Toe Oyunu (React TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React ve TypeScript kullanılarak geliştirilmiş basit bir Tik Tak Toe (X ve O) oyununu içermektedir.
 
-Currently, two official plugins are available:
+## Başlangıç
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Repoyu bilgisayarınıza klonlayın:
 
-## Expanding the ESLint configuration
+    ```bash
+    git clone https://github.com/kullaniciadi/tik-tak-toe.git
+    ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Proje dizinine gidin:
 
-- Configure the top-level `parserOptions` property like this:
+    ```bash
+    cd tik-tak-toe
+    ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. Gerekli bağımlılıkları yükleyin:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    ```bash
+    npm install
+    ```
+
+4. Oyunu başlatın:
+
+    ```bash
+    npm start
+    ```
+
+    Tarayıcınızda `http://localhost:3000` adresine giderek oyunu oynayabilirsiniz.
+
+## Lisans
+
+Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
+
