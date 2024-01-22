@@ -1,0 +1,55 @@
+.Board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Board-Row {
+    display: flex;
+    flex-direction: row;
+}
+.Reset-Button {
+    background-color: #3498db; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 10px 20px; /* İç boşluk */
+    font-size: 16px; /* Metin boyutu */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Köşe yuvarlama */
+    cursor: pointer; /* İmleç türü */
+}
+
+.Reset-Button:hover {
+    background-color: #2980b9; 
+}
+.Board-Row button {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #000;
+    margin: 2px;
+    background-color: #c4cee7;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #5a2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Board-Row button:hover {
+    background-color: #e1e8f0;
+}
+
+.Board-Row button:disabled {
+    cursor: not-allowed;
+}
+
+.Board-Row button:disabled:hover {
+    background-color: #fff;
+}
